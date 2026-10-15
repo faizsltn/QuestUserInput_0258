@@ -45,3 +45,13 @@ fun FormDataDiri(modifier: Modifier = Modifier) {
         verticalArrangement = Arrangement.Top,
         horizontalAlignment = Alignment.CenterHorizontally
     ) {
+        // Input Nama
+        OutlinedTextField(
+            value = textNama,
+            singleLine = true,
+            modifier = Modifier.width(250.dp),
+            label = { Text("Nama") },
+            onValueChange = {
+                textNama = it
+            }
+        )
