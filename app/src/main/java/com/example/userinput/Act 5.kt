@@ -96,3 +96,16 @@ fun FormDataDiri(modifier: Modifier = Modifier) {
             thickness = dimensionResource(id = R.dimen.devider_tipis),
             color = Color.DarkGray
         )
+
+        // Tombol Submit (aktif jika semua data terisi)
+        Button(
+            modifier = Modifier.fillMaxWidth(fraction = 1f),
+            enabled = textNama.isNotEmpty() && textAlamat.isNotEmpty() && textJK.isNotEmpty(),
+            onClick = {
+                nama = textNama
+                jenis = textJK
+                alamat = textAlamat
+            }
+        ) {
+            Text(text = stringResource(id = R.string.submit))
+        }
