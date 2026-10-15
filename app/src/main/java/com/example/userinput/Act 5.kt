@@ -118,3 +118,12 @@ fun FormDataDiri(modifier: Modifier = Modifier) {
             thickness = dimensionResource(id = R.dimen.devider_tipis),
             color = Color.DarkGray
         )
+
+        // Kartu hasil
+        ElevatedCard(
+            elevation = CardDefaults.cardElevation(defaultElevation = 10.dp),
+            colors = CardDefaults.cardColors(containerColor = Color.Black),
+            modifier = Modifier
+                .height(100.dp)
+                .width(300.dp)
+        ) {
